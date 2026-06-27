@@ -1,0 +1,17 @@
+{
+  "steps": [
+    {
+      "startTime": 1782574322799,
+      "endTime": 1782574324152,
+      "name": "test_get_goals_without_token",
+      "status": "FAILED",
+      "events": [],
+      "failureMessage": "assert 400 == 401\n +  where 400 = <Response [400]>.status_code",
+      "stackTrace": "def test_get_goals_without_token():\n    \n        goal_name = f\"Goal-{uuid.uuid4()}\"\n    \n        create_response = GoalsAPI.create_goal(goal_name)\n    \n        assert create_response.status_code == 200\n    \n        goal_id = create_response.json()[\"goal\"][\"id\"]\n    \n        try:\n    \n            response = requests.get(\n                f\"{BASE_URL}/goal/{goal_id}\"\n            )\n    \n>           assert response.status_code == 401\nE           assert 400 == 401\nE            +  where 400 = <Response [400]>.status_code\n\nTests\\test_negative_goal.py:25: AssertionError"
+    }
+  ],
+  "testStatus": "FAILED",
+  "className": "test_negative_goal",
+  "failureMessage": "assert 400 == 401\n +  where 400 = <Response [400]>.status_code",
+  "stackTrace": "def test_get_goals_without_token():\n    \n        goal_name = f\"Goal-{uuid.uuid4()}\"\n    \n        create_response = GoalsAPI.create_goal(goal_name)\n    \n        assert create_response.status_code == 200\n    \n        goal_id = create_response.json()[\"goal\"][\"id\"]\n    \n        try:\n    \n            response = requests.get(\n                f\"{BASE_URL}/goal/{goal_id}\"\n            )\n    \n>           assert response.status_code == 401\nE           assert 400 == 401\nE            +  where 400 = <Response [400]>.status_code\n\nTests\\test_negative_goal.py:25: AssertionError"
+}

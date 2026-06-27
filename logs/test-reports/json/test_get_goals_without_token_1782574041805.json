@@ -1,0 +1,17 @@
+{
+  "steps": [
+    {
+      "startTime": 1782574041806,
+      "endTime": 1782574041818,
+      "name": "test_get_goals_without_token",
+      "status": "FAILED",
+      "events": [],
+      "failureMessage": "AttributeError: 'NoneType' object has no attribute 'status_code'",
+      "stackTrace": "def test_get_goals_without_token():\n    \n        goal_name = f\"Goal-{uuid.uuid4()}\"\n    \n        create_response = GoalAPI.create_goal(goal_name)\n    \n>       assert create_response.status_code == 200\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       AttributeError: 'NoneType' object has no attribute 'status_code'\n\nTests\\test_nagative_goal.py:15: AttributeError"
+    }
+  ],
+  "testStatus": "FAILED",
+  "className": "test_nagative_goal",
+  "failureMessage": "AttributeError: 'NoneType' object has no attribute 'status_code'",
+  "stackTrace": "def test_get_goals_without_token():\n    \n        goal_name = f\"Goal-{uuid.uuid4()}\"\n    \n        create_response = GoalAPI.create_goal(goal_name)\n    \n>       assert create_response.status_code == 200\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       AttributeError: 'NoneType' object has no attribute 'status_code'\n\nTests\\test_nagative_goal.py:15: AttributeError"
+}

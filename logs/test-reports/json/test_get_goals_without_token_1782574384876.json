@@ -1,0 +1,13 @@
+{
+  "steps": [
+    {
+      "startTime": 1782574384878,
+      "endTime": 1782574385614,
+      "name": "test_get_goals_without_token",
+      "status": "PASSED",
+      "events": []
+    }
+  ],
+  "testStatus": "PASSED",
+  "className": "test_negative_goal"
+}

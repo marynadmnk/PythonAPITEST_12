@@ -1,0 +1,13 @@
+{
+  "steps": [
+    {
+      "startTime": 1782574382766,
+      "endTime": 1782574384872,
+      "name": "test_goal_lifecycle",
+      "status": "PASSED",
+      "events": []
+    }
+  ],
+  "testStatus": "PASSED",
+  "className": "test_goal"
+}
